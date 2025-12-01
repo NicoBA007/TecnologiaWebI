@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Título y Descripción -->
+  <title>Nicolas Barrancos | Portal de Asignaciones UPDS</title>
+  <meta name="description"
+    content="Portal de entrega de asignaciones para Tecnología Web I. Estudiante: Nicolas Barrancos.">
+
+  <!-- Fuentes Google (Outfit) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <!-- Iconos FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Tu Hoja de Estilos -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+
+  <!-- NAV: Flotante -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <span class="logo">&lt;Nicolas<span class="dot">.BA</span>/&gt;</span>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION: Bienvenida y Foto (ESTILO NUEVO) -->
+  <header class="hero">
+    <div class="container hero-grid">
+
+      <!-- Texto de bienvenida -->
+      <div class="hero-text">
+        <span class="badge">Ingeniería de Sistemas</span>
+        <h1>Tecnología Web <span class="gradient-text">I</span></h1>
+        <p>Bienvenido a mi portal de asignaciones. Aquí encontrarás el registro completo de prácticas, investigaciones y
+          evaluaciones desarrolladas en la materia Tecnología Web en la <strong>UPDS - Cochabamba</strong>.</p>
+      </div>
+
+      <!-- Foto de Perfil (NUEVA ESTRUCTURA DE TARJETA) -->
+      <div class="hero-img">
+        <div class="profile-card">
+          <div class="img-wrapper">
+            <!-- IMAGEN DE EJEMPLO para la previsualización, tú usa 'imagenes/perfil1morado.jpg' -->
+            <img
+              src="imagenes/perfil1morado2.jpg"
+              alt="Nicolas Barrancos">
+          </div>
+          <!-- Borde decorativo neón -->
+          <div class="card-border"></div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Indicador de Scroll -->
+    <div class="scroll-indicator">
+      <span>Ver Actividades</span>
+      <a href="#actividades" aria-label="Bajar a actividades">
+        <i class="fas fa-chevron-down bounce"></i>
+      </a>
+    </div>
+  </header>
+
+  <!-- MAIN: Lista de Actividades -->
+  <main class="assignments-section" id="actividades">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Lista de Actividades</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="assignments-grid">
+
+        <!-- A1 -->
+        <article class="card">
+          <div class="card-top">
+            <span class="tag">A1</span>
+          </div>
+          <div class="card-content">
+            <h3>Práctica 1</h3>
+            <p>Configuración y despliegue de Servidor Web.</p>
+            <a href="#" class="btn-card">Ver Servidor Web</a>
+          </div>
+        </article>
+
+        <!-- A2 -->
+        <article class="card">
+          <div class="card-top">
+            <span class="tag">A2</span>
+          </div>
+          <div class="card-content">
+            <h3>Práctica 2</h3>
+            <p>Desarrollo de estructura HTML (P2).</p>
+            <a href="#" class="btn-card">Ver P2</a>
+          </div>
+        </article>
+
+        <!-- A3 -->
+        <article class="card">
+          <div class="card-top">
+            <span class="tag research">A3</span>
+          </div>
+          <div class="card-content">
+            <h3>Investigación</h3>
+            <p>Documento de investigación I1.</p>
+            <a href="#" class="btn-card">Leer I1</a>
+          </div>
+        </article>
+
+        <!-- A4 -->
+        <article class="card">
+          <div class="card-top">
+            <span class="tag expo">A4</span>
+          </div>
+          <div class="card-content">
+            <h3>Exposición</h3>
+            <p>Presentación del tema asignado (E1).</p>
+            <a href="#" class="btn-card">Ver E1</a>
+          </div>
+        </article>
+
+        <!-- A5 (Highlight) -->
+        <article class="card highlight">
+          <div class="card-top">
+            <span class="tag exam">A5</span>
+            <i class="fas fa-star star-icon"></i>
+          </div>
+          <div class="card-content">
+            <h3>Evaluación</h3>
+            <p>Primer Parcial (EXAM1).</p>
+            <a href="#" class="btn-card btn-glow">Ver EXAM1</a>
+          </div>
+        </article>
+
+        <!-- A6 -->
+        <article class="card">
+          <div class="card-top">
+            <span class="tag">A6</span>
+          </div>
+          <div class="card-content">
+            <h3>Práctica 3</h3>
+            <p>Ejercicios de CSS y Diseño (P3).</p>
+            <a href="#" class="btn-card">Ver P3</a>
+          </div>
+        </article>
+
+        <!-- A7 (Proyecto Final) -->
+        <article class="card project-card">
+          <div class="card-content project-content">
+            <div class="project-info">
+              <span class="tag project">A7</span>
+              <h3>Proyecto Final</h3>
+              <p>Integración completa de conocimientos (P4).</p>
+            </div>
+            <div class="project-action">
+              <a href="#" class="btn-card btn-primary">Ver Proyecto P4 <i class="fas fa-arrow-right"></i></a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container footer-content">
+      <div class="footer-info">
+        <p>&copy; 2025 Nicolas Barrancos Arze.</p>
+        <small>Estudiante UPDS - Cochabamba, Bolivia.</small>
+      </div>
+      <div class="social-links">
+        <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+
+</html>
