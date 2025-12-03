@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burger King Styles - Pedido</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lilita+One&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+
+    <main class="main-container">
+        <section class="form-wrapper">
+            <div class="form-header">
+                <h1>SUPER BURGER</h1>
+                <p>Personaliza tu anojo</p>
+            </div>
+
+            <form action="#" method="post">
+
+                <div class="input-group">
+                    <label for="nombre">Tu Nombre</label>
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Juan Pérez" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="salsa">Elige tu Salsa Secreta</label>
+                    <select id="salsa" name="salsa">
+                        <option value="bbq">BBQ Ahumada</option>
+                        <option value="mayo">Mayonesa Picante</option>
+                        <option value="classic">Ketchup Clásico</option>
+                    </select>
+                </div>
+
+                <fieldset class="options-group">
+                    <legend>Extras:</legend>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="extra" value="queso"> Doble Queso
+                    </label>
+                    <label class="checkbox-label">
+                        <input type="checkbox" name="extra" value="bacon"> Bacon Crujiente
+                    </label>
+                </fieldset>
+
+                <button type="submit" class="btn-submit">¡PEDIR AHORA!</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>

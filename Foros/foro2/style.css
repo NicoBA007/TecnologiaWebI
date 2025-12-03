@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+
+    /* RECURSO 1: https://unsplash.com/es (Imagen de fondo de hamburguesa) */
+    /* RECURSO 2: https://cssgradient.io/ (Degradado negro semitransparente sobre la imagen para que se lea el texto) */
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+        url('https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=1920&auto=format&fit=crop');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/* Contenedor principal del formulario */
+.form-wrapper {
+    width: 100%;
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    /* Para que el header no se salga de los bordes redondeados */
+
+    /* RECURSO 3: https://getcssscan.com/css-box-shadow-examples */
+    /* Sombra #3 para dar un efecto de elevación suave pero notable */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.form-header {
+    text-align: center;
+    padding: 30px 20px;
+    color: white;
+
+    /* RECURSO 4: https://coolors.co/ (Paleta de colores generada: Rojo Intenso) */
+    background-color: #D90429;
+
+    /* RECURSO 5: https://heropatterns.com/ (Patrón 'Topography' superpuesto al rojo) */
+    background-image: url("data:image/svg+xml,%3Csvg width='32' height='32' viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M16 0c8.837 0 16 7.163 16 16s-7.163 16-16 16S0 24.837 0 16 7.163 0 16 0zm0 2C8.268 2 2 8.268 2 16s6.268 14 14 14 14-6.268 14-14S23.732 2 16 2z' fill='%239d0202' fill-opacity='0.4' fill-rule='evenodd'/%3E%3C/svg%3E");
+
+    /* RECURSO 6: https://www.magicpattern.design/tools/css-backgrounds */
+    /* Borde inferior ondulado usando CSS puro */
+    border-bottom: 4px solid #EF233C;
+}
+
+/* RECURSO 7: https://fonts.google.com/ (Fuente Lilita One) */
+.form-header h1 {
+    font-family: 'Lilita One', cursive;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.form-header p {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+form {
+    padding: 30px;
+}
+
+.input-group {
+    margin-bottom: 20px;
+}
+
+/* RECURSO 8: https://www.htmlcsscolor.com/ */
+/* Usado para obtener información del color gris pizarra oscuro para etiquetas */
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+    color: #2F4F4F;
+    /* DarkSlateGray */
+}
+
+input[type="text"],
+select {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+    transition: border-color 0.3s;
+}
+
+/* RECURSO 9: https://www.google.com/search?q=color+picker */
+/* Seleccioné este amarillo mostaza específico (#FFB703) usando el picker de Google */
+input[type="text"]:focus,
+select:focus {
+    border-color: #FFB703;
+}
+
+.options-group {
+    border: none;
+    margin-bottom: 20px;
+    padding: 0;
+}
+
+.options-group legend {
+    font-weight: bold;
+    color: #2F4F4F;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.checkbox-label {
+    display: inline-block;
+    margin-right: 15px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 50px;
+    color: white;
+    font-size: 1.2rem;
+    font-weight: bold;
+    font-family: 'Lilita One', cursive;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: transform 0.2s;
+
+    /* RECURSO 10: https://uigradients.com/ */
+    /* Gradiente 'Orange Coral' para el botón de llamada a la acción */
+    background: #ff9966;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ff5e62, #ff9966);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ff5e62, #ff9966);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+
+.btn-submit:hover {
+    transform: scale(1.02);
+    box-shadow: 0px 5px 15px rgba(255, 94, 98, 0.4);
+}
