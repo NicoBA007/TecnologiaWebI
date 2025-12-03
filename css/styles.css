@@ -1,19 +1,10 @@
 :root {
-    /* Tu Paleta de Colores */
     --bg-dark: #0a0611;
-    /* Fondo Página */
     --bg-card: #130c1c;
-    /* Fondo Tarjetas */
     --accent-main: #7d57ca;
-    /* Morado Neón (Principal) */
     --accent-dark: #4d3089;
-    /* Morado Oscuro (Bordes) */
     --text-primary: #ffffff;
-    /* Títulos */
     --text-secondary: #caa9cf;
-    /* Texto general (Lavanda) */
-
-    /* Configuración */
     --font-main: 'Outfit', sans-serif;
     --border-radius: 16px;
     --transition: all 0.3s ease;
@@ -37,7 +28,6 @@ body {
     overflow-x: hidden;
 }
 
-/* Contenedor */
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -49,9 +39,6 @@ a {
     color: inherit;
 }
 
-/* =========================================
-   2. NAVBAR
-   ========================================= */
 .navbar {
     padding: 2rem 0;
     position: absolute;
@@ -71,23 +58,18 @@ a {
     color: var(--accent-main);
 }
 
-/* =========================================
-   3. HERO SECTION (ACTUALIZADO - TARJETA)
-   ========================================= */
 .hero {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     position: relative;
-    /* Fondo radial sutil */
     background: radial-gradient(circle at 70% 30%, rgba(125, 87, 202, 0.15) 0%, transparent 60%);
     overflow: hidden;
 }
 
 .hero-grid {
     display: grid;
-    /* Columnas equilibradas para texto e imagen */
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
     gap: 2rem;
@@ -118,6 +100,7 @@ a {
 .gradient-text {
     background: linear-gradient(135deg, var(--text-primary), var(--accent-main));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -126,8 +109,6 @@ a {
     max-width: 550px;
     opacity: 0.9;
 }
-
-/* --- ESTILOS DE LA FOTO (TIPO TARJETA) --- */
 
 .hero-img {
     display: flex;
@@ -140,7 +121,6 @@ a {
     position: relative;
     width: 320px;
     height: 420px;
-    /* Rectángulo vertical */
     z-index: 1;
 }
 
@@ -160,7 +140,6 @@ a {
     width: 100%;
     height: 100%;
     object-fit: cover;
-    /* Centra la foto priorizando la parte superior (cara) */
     object-position: center top;
     transition: transform 0.5s ease;
 }
@@ -169,7 +148,6 @@ a {
     transform: scale(1.05);
 }
 
-/* Borde Neón Desplazado */
 .card-border {
     position: absolute;
     top: 20px;
@@ -190,7 +168,6 @@ a {
     box-shadow: 0 0 20px var(--accent-main);
 }
 
-/* Indicador de Scroll */
 .scroll-indicator {
     position: absolute;
     bottom: 30px;
@@ -217,27 +194,17 @@ a {
 }
 
 @keyframes bounce {
-
-    0%,
-    20%,
-    50%,
-    80%,
-    100% {
+    0%, 20%, 50%, 80%, 100% {
         transform: translateY(0);
     }
-
     40% {
         transform: translateY(-10px);
     }
-
     60% {
         transform: translateY(-5px);
     }
 }
 
-/* =========================================
-   4. ASSIGNMENTS SECTION
-   ========================================= */
 .assignments-section {
     padding: 100px 0;
 }
@@ -262,14 +229,12 @@ a {
     opacity: 0.5;
 }
 
-/* Grid */
 .assignments-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
 }
 
-/* Cards */
 .card {
     background-color: var(--bg-card);
     border: 1px solid rgba(255, 255, 255, 0.05);
@@ -394,9 +359,6 @@ a {
     color: var(--accent-main);
 }
 
-/* =========================================
-   5. FOOTER
-   ========================================= */
 footer {
     border-top: 1px solid rgba(255, 255, 255, 0.05);
     padding: 3rem 0;
@@ -426,36 +388,50 @@ footer {
     transform: translateY(-3px);
 }
 
-/* =========================================
-   6. RESPONSIVE
-   ========================================= */
 @media (max-width: 900px) {
     .hero {
-        height: auto;
-        padding: 120px 0 60px 0;
+        min-height: auto;
+        padding: 100px 0 60px 0;
         text-align: center;
+        display: flex;
+        flex-direction: column;
     }
 
     .hero-grid {
-        grid-template-columns: 1fr;
+        display: flex;
+        flex-direction: column;
         gap: 3rem;
         text-align: center;
     }
 
     .hero-img {
         order: -1;
-        margin-bottom: 1rem;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2rem;
     }
 
-    /* Ajuste tamaño tarjeta móvil */
     .profile-card {
-        width: 260px;
-        height: 340px;
+        width: 80%;
+        max-width: 280px;
+        height: auto;
+        aspect-ratio: 3 / 4;
         margin: 0 auto;
     }
 
-    .hero-text p {
-        margin: 0 auto;
+    .scroll-indicator {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 3rem;
+        margin-bottom: 2rem;
+        opacity: 1;
+    }
+
+    .assignments-grid {
+        grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     }
 
     .project-content {
