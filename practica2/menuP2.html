@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Práctica de JavaScript</title>
+  <link rel="stylesheet" href="../css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <a href="../index.html" class="btn-back-home">
+    &#8592; Volver al Menú
+  </a>
+  <main class="assignments-section" id="actividades">
+    <div class="container">
+      <div class="section-header">
+        <h2 class="section-title">Lista de Ejercicios de la Actividad 2</h2>
+        <div class="divider"></div>
+      </div>
+
+      <div class="assignments-grid">
+
+        <article class="card">
+          <div class="card-top">
+            <span class="tag">Ejercicio 1</span>
+          </div>
+          <div class="card-content">
+            <h3>Clima según Temperatura</h3>
+            <p>Ingrese grados Celsius para ver el clima (-10 a 40).</p>
+
+            <input type="number" id="tempInput" class="input-field" placeholder="Ejemplo: 20">
+            <button onclick="determinarClima()" class="btn-card">Verificar Clima</button>
+
+            <div id="resultadoClima" class="result-box">Esperando dato...</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="tag">Ejercicio 2</span>
+          </div>
+          <div class="card-content">
+            <h3>Algoritmo Fizz-Buzz</h3>
+            <p>Muestra contador 1-100. Múltiplos de 3 (Fizz), 5 (Buzz) o ambos</p>
+
+            <button onclick="ejecutarFizzBuzz()" class="btn-card">Ejecutar Algoritmo</button>
+
+            <div id="resultadoFizzBuzz" class="result-box">Click para iniciar...</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="tag">Ejercicio 3</span>
+          </div>
+          <div class="card-content">
+            <h3>Fecha Actual</h3>
+            <p>Muestra la fecha en formato: Día, DD de Mes del AAAA</p>
+
+            <button onclick="mostrarFecha()" class="btn-card">Mostrar Fecha</button>
+
+            <div id="resultadoFecha" class="result-box">--/--/--</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="tag">Ejercicio 4</span>
+          </div>
+          <div class="card-content">
+            <h3>Lugar Turístico</h3>
+            <p>Cristo de la Concordia</p>
+
+            <div class="action-row">
+              <button onclick="verInfoLugar()" class="btn-card">Ver Info & Promedio</button>
+            </div>
+
+            <div class="action-row">
+              <input type="number" id="descuentoInput" class="input-field" placeholder="% Desc."
+                style="margin-bottom:0;">
+              <button onclick="aplicarDescuentoLugar()" class="btn-card">Aplicar</button>
+            </div>
+
+            <div id="resultadoLugar" class="result-box">Info del objeto...</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="tag">Ejercicio 5</span>
+          </div>
+          <div class="card-content">
+            <h3>Gestión Hotel</h3>
+            <p>Gestionar reservas del "Gran Hotel Cochabamba"</p>
+
+            <input type="number" id="cantHabitaciones" class="input-field" placeholder="Cantidad de habitaciones">
+
+            <div class="action-row">
+              <button onclick="gestionarHotel('reservar')" class="btn-card">Reservar</button>
+              <button onclick="gestionarHotel('liberar')" class="btn-card">Liberar</button>
+            </div>
+            <button onclick="mostrarInfoHotel()" class="btn-card">Ver Info Actual</button>
+
+            <div id="resultadoHotel" class="result-box">Estado del hotel...</div>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="tag">Certificado</span>
+          </div>
+          <div class="card-content">
+            <h3>Introducción a JavaScript</h3>
+            <p>Certificado del curso "Introducción a JavaScript"</p>
+
+            <a class="btn-card" target="_blank" href="https://www.sololearn.com/certificates/CC-EBPWJEXF">Ver
+              Certificado</a>
+            <div class="result-box">Certificado original cargado desde la página www.sololearn.com</div>
+
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+
+</html>

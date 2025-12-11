@@ -483,3 +483,53 @@ footer {
     border-color: var(--accent-main);
 
 }
+
+/*estilos añadidios practica 2*/
+/* --- AGREGAR AL FINAL DE styles.css --- */
+
+/* Estilos para inputs y elementos interactivos dentro de las cards */
+.input-field {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 1rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border: 1px solid var(--accent-dark);
+    border-radius: 8px;
+    color: var(--text-primary);
+    font-family: var(--font-main);
+    outline: none;
+    transition: var(--transition);
+}
+
+.input-field:focus {
+    border-color: var(--accent-main);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.result-box {
+    margin-top: 1rem;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    border-left: 3px solid var(--accent-main);
+    font-size: 0.95rem;
+    color: #e0cffc;
+    min-height: 40px;
+    /* Para el FizzBuzz que es largo */
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+.action-row {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+/* Ajuste para botones dentro de cards para que actúen como triggers */
+.btn-card {
+    cursor: pointer;
+    background: transparent;
+    width: 100%;
+}
+
