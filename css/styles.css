@@ -484,10 +484,10 @@ footer {
 
 }
 
-/*estilos añadidios practica 2*/
-/* --- AGREGAR AL FINAL DE styles.css --- */
 
-/* Estilos para inputs y elementos interactivos dentro de las cards */
+
+/*estilos añadidios practica 2*/
+
 .input-field {
     width: 100%;
     padding: 10px;
@@ -515,7 +515,6 @@ footer {
     font-size: 0.95rem;
     color: #e0cffc;
     min-height: 40px;
-    /* Para el FizzBuzz que es largo */
     max-height: 200px;
     overflow-y: auto;
 }
@@ -526,7 +525,6 @@ footer {
     margin-bottom: 10px;
 }
 
-/* Ajuste para botones dentro de cards para que actúen como triggers */
 .btn-card {
     cursor: pointer;
     background: transparent;

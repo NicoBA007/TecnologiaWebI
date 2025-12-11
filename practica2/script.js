@@ -1,6 +1,4 @@
-/* ==========================================
-   EJERCICIO 1: Temperatura y Clima
-   ========================================== */
+//ejercicio 1
 function determinarClima() {
     const input = document.getElementById('tempInput').value;
     const resultadoDiv = document.getElementById('resultadoClima');
@@ -8,7 +6,7 @@ function determinarClima() {
 
     if (isNaN(temp)) {
         resultadoDiv.innerHTML = "Por favor, ingresa un número válido.";
-        resultadoDiv.style.color = "#ff6b6b"; // Un color rojizo de error
+        resultadoDiv.style.color = "#ff6b6b"; 
         return;
     }
 
@@ -29,9 +27,9 @@ function determinarClima() {
     resultadoDiv.innerHTML = `Temperatura: <strong>${temp}°C</strong> <br> Clima: <strong>${clima}</strong>`;
 }
 
-/* ==========================================
-   EJERCICIO 2: Fizz-Buzz
-   ========================================== */
+
+
+//ejercicio2
 function ejecutarFizzBuzz() {
     const resultadoDiv = document.getElementById('resultadoFizzBuzz');
     let output = "";
@@ -42,16 +40,9 @@ function ejecutarFizzBuzz() {
         if (i % 3 === 0) mensaje += "Fizz";
         if (i % 5 === 0) mensaje += "Buzz";
         
-        // Si no es múltiplo de ninguno, mostramos el número, 
-        // si es múltiplo mostramos el texto.
-        // NOTA: El enunciado dice: "si el número no es múltiplo de 3 o 5 no mostrara nada".
-        // Sin embargo, para ver el algoritmo funcionar, es común mostrar el número. 
-        // Seguiré la instrucción estricta: Solo mostrar si es Fizz, Buzz o FizzBuzz.
-        
         if (mensaje !== "") {
             output += `${i}: ${mensaje}<br>`;
         } else {
-            // Descomenta la siguiente línea si quieres ver los números normales también
              output += `${i}<br>`; 
         }
     }
@@ -59,9 +50,7 @@ function ejecutarFizzBuzz() {
     resultadoDiv.innerHTML = output;
 }
 
-/* ==========================================
-   EJERCICIO 3: Fecha Actual
-   ========================================== */
+//ejercicio 3
 function mostrarFecha() {
     const resultadoDiv = document.getElementById('resultadoFecha');
     const fecha = new Date();
@@ -74,15 +63,12 @@ function mostrarFecha() {
     const nombreMes = meses[fecha.getMonth()];
     const anio = fecha.getFullYear();
 
-    // Ejemplo: Jueves, 25 de Diciembre del 2025
     const fechaTexto = `${nombreDia}, ${diaNumero} de ${nombreMes} del ${anio}`;
 
     resultadoDiv.innerHTML = fechaTexto;
 }
 
-/* ==========================================
-   EJERCICIO 4: Objeto Lugar Turístico
-   ========================================== */
+//ejercicio 4
 // Definición del objeto global para poder manipularlo
 let lugarTuristico = {
     nombre: "Cristo de la Concordia",
@@ -145,9 +131,7 @@ function aplicarDescuentoLugar() {
     `;
 }
 
-/* ==========================================
-   EJERCICIO 5: Clase Hotel
-   ========================================== */
+// ejercicio 5
 class Hotel {
     constructor(nombre, ciudad, habitacionesDisponibles) {
         this.nombre = nombre;
