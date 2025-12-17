@@ -1,0 +1,65 @@
+{
+    "destino": "República de Madagascar",
+    "ubicacion": {
+        "continente": "África",
+        "region": "Océano Índico",
+        "coordenadas": "-18.7669, 46.8691"
+    },
+    "descripcion_general": "Conocida como la 'Gran Isla Roja', Madagascar es la cuarta isla más grande del mundo. Es un paraíso de biodiversidad donde el 90% de la flora y fauna es endémica (no existe en ningún otro lugar). Famosa por sus lémures, baobabs, selvas tropicales, desiertos y playas de ensueño.",
+    "moneda": "Ariary malgache (MGA)",
+    "idiomas_oficiales": [
+        "Malgache",
+        "Francés"
+    ],
+    "lugares_imperdibles": [
+        {
+            "nombre": "Avenida de los Baobabs",
+            "tipo": "Monumento Natural",
+            "descripcion": "Un camino de tierra flanqueado por gigantescos árboles baobab de más de 800 años. Es uno de los paisajes más icónicos de África, especialmente hermoso al atardecer.",
+            "mejor_hora_visita": "17:00 - 18:30 (Puesta de sol)",
+            "precio_entrada": "Gratuito (se agradecen propinas a la comunidad local)"
+        },
+        {
+            "nombre": "Parque Nacional Isalo",
+            "tipo": "Parque Nacional",
+            "descripcion": "Conocido como el 'Colorado de Madagascar', ofrece paisajes jurásicos con cañones profundos, oasis de piscinas naturales y lémures de cola anillada.",
+            "actividades": [
+                "Trekking",
+                "Baño en piscina natural",
+                "Camping"
+            ],
+            "precio_entrada": 65000,
+            "horarios": "06:30 - 16:30"
+        },
+        {
+            "nombre": "Parque Nacional Tsingy de Bemaraha",
+            "tipo": "Patrimonio de la Humanidad UNESCO",
+            "descripcion": "Un bosque de piedra caliza con pináculos afilados como agujas. Es un laberinto geológico impresionante y hogar de especies únicas.",
+            "dificultad": "Alta (requiere arneses y guías)",
+            "precio_entrada": 55000
+        }
+    ],
+    "gastronomia_tipica": [
+        {
+            "plato": "Romazava",
+            "descripcion": "Estofado tradicional de carne de cebú con verduras de hoja verde y especias.",
+            "precio_estimado_local": "15000 MGA"
+        },
+        {
+            "plato": "Ravitoto",
+            "descripcion": "Hojas de yuca machacadas cocinadas con carne de cerdo o cebú y coco.",
+            "precio_estimado_local": "12000 MGA"
+        },
+        {
+            "plato": "Mofo Gasy",
+            "descripcion": "Pequeños panes dulces de harina de arroz cocinados al carbón, típicos del desayuno.",
+            "precio_estimado_local": "500 MGA"
+        }
+    ],
+    "presupuesto_viajero_dia": {
+        "mochilero": "30 - 50 USD",
+        "estandar": "70 - 120 USD",
+        "lujo": "200+ USD"
+    },
+    "mejor_epoca": "Abril a Octubre (Estación seca)"
+}
